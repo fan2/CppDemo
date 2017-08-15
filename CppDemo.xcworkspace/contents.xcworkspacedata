@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:STACK_DIR/STACK_DIR.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BYTE_ORDER/BYTE_ORDER.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CppLib/CppLib.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CLib/CLib.xcodeproj">
+   </FileRef>
+</Workspace>
