@@ -11,7 +11,7 @@
       location = "group:BYTE_ORDER/BYTE_ORDER.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CppLib/CppLib.xcodeproj">
+      location = "group:WORDSIZE/WORDSIZE.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CLib/CLib.xcodeproj">

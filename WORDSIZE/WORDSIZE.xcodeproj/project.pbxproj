@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		221B3E4B1F42662F00F95869 /* CppLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppLib; sourceTree = BUILT_PRODUCTS_DIR; };
+		221B3E4B1F42662F00F95869 /* WORDSIZE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WORDSIZE; sourceTree = BUILT_PRODUCTS_DIR; };
 		221B3E4E1F42662F00F95869 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		221B3E421F42662F00F95869 = {
 			isa = PBXGroup;
 			children = (
-				221B3E4D1F42662F00F95869 /* CppLib */,
+				221B3E4D1F42662F00F95869 /* WORDSIZE */,
 				221B3E4C1F42662F00F95869 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		221B3E4C1F42662F00F95869 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				221B3E4B1F42662F00F95869 /* CppLib */,
+				221B3E4B1F42662F00F95869 /* WORDSIZE */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		221B3E4D1F42662F00F95869 /* CppLib */ = {
+		221B3E4D1F42662F00F95869 /* WORDSIZE */ = {
 			isa = PBXGroup;
 			children = (
 				221B3E4E1F42662F00F95869 /* main.cpp */,
 			);
-			path = CppLib;
+			path = WORDSIZE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		221B3E4A1F42662F00F95869 /* CppLib */ = {
+		221B3E4A1F42662F00F95869 /* WORDSIZE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 221B3E521F42662F00F95869 /* Build configuration list for PBXNativeTarget "CppLib" */;
+			buildConfigurationList = 221B3E521F42662F00F95869 /* Build configuration list for PBXNativeTarget "WORDSIZE" */;
 			buildPhases = (
 				221B3E471F42662F00F95869 /* Sources */,
 				221B3E481F42662F00F95869 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = CppLib;
+			name = WORDSIZE;
 			productName = CppLib;
-			productReference = 221B3E4B1F42662F00F95869 /* CppLib */;
+			productReference = 221B3E4B1F42662F00F95869 /* WORDSIZE */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 221B3E461F42662F00F95869 /* Build configuration list for PBXProject "CppLib" */;
+			buildConfigurationList = 221B3E461F42662F00F95869 /* Build configuration list for PBXProject "WORDSIZE" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				221B3E4A1F42662F00F95869 /* CppLib */,
+				221B3E4A1F42662F00F95869 /* WORDSIZE */,
 			);
 		};
 /* End PBXProject section */
@@ -235,7 +235,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		221B3E461F42662F00F95869 /* Build configuration list for PBXProject "CppLib" */ = {
+		221B3E461F42662F00F95869 /* Build configuration list for PBXProject "WORDSIZE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				221B3E501F42662F00F95869 /* Debug */,
@@ -244,7 +244,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		221B3E521F42662F00F95869 /* Build configuration list for PBXNativeTarget "CppLib" */ = {
+		221B3E521F42662F00F95869 /* Build configuration list for PBXNativeTarget "WORDSIZE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				221B3E531F42662F00F95869 /* Debug */,
