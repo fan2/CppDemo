@@ -7,6 +7,8 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+#include <cstdint>
 #include <pthread.h>
 
 // [What is the direction of stack growth in most modern systems?](https://stackoverflow.com/questions/664744/what-is-the-direction-of-stack-growth-in-most-modern-systems)
@@ -44,6 +46,7 @@ int main(int argc, const char * argv[]) {
     size_t stacksize = pthread_get_stacksize_np(tid);
     std::cout << "stacksize = " << stacksize << std::endl; // PTHREAD_STACK_MIN = 8K
     
+    // 打印局部变量地址
     std::cout << "&i = " << static_cast<const void *>(&i) << std::endl;
     std::cout << "&tid = " << static_cast<const void *>(&tid) << std::endl; // struct
     
@@ -52,6 +55,7 @@ int main(int argc, const char * argv[]) {
     char day = 19;
     char wish[4]{0x11, 0x22, 0x33, 0x44};
     
+    // 打印局部变量地址
     std::cout << "&year = " << static_cast<const void *>(&year) << std::endl;
     std::cout << "&month = " << static_cast<const void *>(&month) << std::endl;
     std::cout << "&day = " << static_cast<const void *>(&day) << std::endl;
@@ -61,8 +65,15 @@ int main(int argc, const char * argv[]) {
     }
     std::cout << "wish as int = " << std::hex << "0x" << *reinterpret_cast<int*>(wish) << std::endl;
     
+    // 测试栈增长方向
     STACK_DIR stack_growth_dir = test_stack_direction();
     std::cout << "stack_growth_dir = " << stack_growth_dir << std::endl;
     
-    return 0;
+    // 验证动态分配堆的增长（向高地址增长）
+    void* ca = malloc(4);   // new?
+    std::cout << "ca = " << std::hex << "0x" << (uintptr_t)ca << std::endl;
+    void* cb = malloc(4);   // new?
+    std::cout << "cb = " << std::hex << "0x" << (uintptr_t)cb << std::endl;
+    
+    return EXIT_SUCCESS;
 }
